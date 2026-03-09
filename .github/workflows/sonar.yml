@@ -21,6 +21,8 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B verify
+        working-directory: placement
 
       - name: Analyze with SonarCloud
         run: mvn sonar:sonar
+        working-directory: placement
